@@ -1,8 +1,8 @@
 import Phaser from "phaser";
 
 const config = {
-  width: "100%",
-  height: "100%",
+  width: window.innerHeight,
+  height: window.innerHeight,
   type: Phaser.AUTO,
   scene: {
     init: function () {
