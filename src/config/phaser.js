@@ -1,28 +1,24 @@
 import Phaser from "phaser";
+import backgroundScene from "./scenes/backgroundScene";
 
 const config = {
-  width: window.innerHeight,
+  width: window.innerWidth,
   height: window.innerHeight,
+  orientation: Phaser.Scale.Orientation.LANDSCAPE,
   type: Phaser.AUTO,
   scene: {
     init: function () {
       this.cameras.main.setBackgroundColor("#24252A");
     },
+    preload: function () {
+      this.load.image("bg", "assets/background.png");
+    },
+
     create: function () {
-      this.helloWorld = this.add.text(
-        this.cameras.main.centerX,
-        this.cameras.main.centerY,
-        "Hello World",
-        {
-          font: "40px Arial",
-          fill: "#ffffff",
-        }
-      );
-      this.helloWorld.setOrigin(0.5);
+      this.game.scene.add("background", backgroundScene);
+      this.game.scene.start("background");
     },
-    update: function () {
-      this.helloWorld.angle += 1;
-    },
+    update: function () {},
   },
 };
 export default config;

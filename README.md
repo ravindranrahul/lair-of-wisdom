@@ -9,3 +9,7 @@ Game Play: https://nourharidy.medium.com/lair-of-wisdom-on-chain-co-op-pvp-mmo-g
 # Contract Address
 
 Lair Contract: [0x83633dca596E741c80f4FA032C75518CC251B09b](https://ftmscan.com/address/0x83633dca596e741c80f4fa032c75518cc251b09b#readContract)
+
+# Credits for assets
+
+- Background: https://fertile-soil-productions.itch.io/modular-terrain-pack

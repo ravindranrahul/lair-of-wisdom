@@ -9,8 +9,8 @@ function Game() {
   }
   return (
     <div>
-      <button onClick={getDragons}>Get Dragons</button>
-      {/* <IonPhaser game={config} initialize={true} /> */}
+      {/* <button onClick={getDragons}>Get Dragons</button> */}
+      <IonPhaser game={config} initialize={true} />
     </div>
   );
 }
